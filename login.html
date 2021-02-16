@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>DoToken - Events</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Transparent Login Form UI</title> -->
+    <link rel="stylesheet" href="./css/style.css">
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="header-navbar">
+		<a class="navbar-brand" href="#">
+    			<img src="./img/dt.png" width="80" height="30">
+    		</a>
+                <a class="navbar-brand page-scroll" href="./index.html">DoToken</a>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="bg-img">
+      <div class="content">
+        <header>Login Form</header>
+        <form action="./organizer.html" method="POST">
+          <div class="field">
+            <span class="fa fa-user"></span>
+            <input type="text" required placeholder="Email or Phone">
+          </div>
+<div class="field space">
+            <span class="fa fa-lock"></span>
+            <input type="password" class="pass-key" required placeholder="Password">
+            <span class="show">SHOW</span>
+          </div>
+<div class="pass">
+            <a href="#">Forgot Password?</a>
+          </div>
+<div class="field">
+            <input type="submit" value="LOGIN">
+          </div>
+</form>
+<div class="login">
+Or login with</div>
+<div class="links">
+          <div class="facebook">
+            <i class="fab fa-facebook"><span>Facebook</span></i>
+          </div>
+          <div class="instagram">
+            <i class="fab fa-instagram"><span>Google</span></i>
+          </div>
+</div>
+<div class="signup">
+Don't have account?
+          <a href="./signup.html">Signup Now</a>
+        </div>
+</div>
+</div>
+
+ <nav class="navbar fixed-bottom navbar-light bg-light">
+       <div class="container-fluid">
+        <a class="navbar-brand" href="#">Copyright &copy; 2021 </a>
+      </div>
+   </nav>
+<script>
+      const pass_field = document.querySelector('.pass-key');
+      const showBtn = document.querySelector('.show');
+      showBtn.addEventListener('click', function(){
+       if(pass_field.type === "password"){
+         pass_field.type = "text";
+         showBtn.textContent = "HIDE";
+         showBtn.style.color = "#3498db";
+       }else{
+         pass_field.type = "password";
+         showBtn.textContent = "SHOW";
+         showBtn.style.color = "#222";
+       }
+      });
+    </script>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+  </body>
+</html>
+
